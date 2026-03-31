@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body onload="startClock()">
+
+<header class="topbar">
+  <span>Student Productivity Dashboard</span>
+  <div>
+    <span id="liveClock"></span>
+    <button onclick="toggleTheme()">Dark Mode</button>
+  </div>
+</header>
+
+<nav class="sidebar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="academics.html">Academics</a>
+  <a href="planner.html">Planner</a>
+  <a href="timer.html">Focus Timer</a>
+  <a href="materials.html">Study Materials</a>
+  <a href="wellness.html">Wellness Center</a>
+  <a href="profile.html">Profile</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html">Logout</a>
+</nav>
+
+<main class="main-content">
+
+  <div class="card">
+    <h2>Welcome Back!</h2>
+    <button onclick="generateQuote()">Inspire Me</button>
+    <p id="quoteDisplay"></p>
+  </div>
+
+  <div class="card">
+    <h3>Daily Study Progress</h3>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+    <input type="number" id="progressInput" placeholder="Hours studied">
+    <button onclick="updateProgress()">Update</button>
+  </div>
+
+  <div class="card">
+    <h3>Study Motivation Video</h3>
+    <video controls autoplay muted style="width:100%; max-height:400px;">
+      <source src="REVISED.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</main>
+
+</body>
+</html>
+
+

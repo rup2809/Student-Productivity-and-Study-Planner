@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wellness</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+<button onclick="goDashboard()" class="back-btn">⬅ Back</button>
+<h2>Wellness Center</h2>
+</header>
+
+<section class="card">
+<select id="mood">
+<option>Happy</option>
+<option>Neutral</option>
+<option>Stressed</option>
+<option>Tired</option>
+</select>
+<button onclick="trackMood()">Submit Mood</button>
+<p id="moodMessage"></p>
+</section>
+
+<section class="card">
+<input type="number" id="stressLevel" placeholder="Stress Level 1-10">
+<button onclick="checkStress()">Check</button>
+<p id="stressMessage"></p>
+</section>
+
+<section class="card">
+<button onclick="generateAffirmation()">Affirmation</button>
+<p id="affirmationDisplay"></p>
+</section>
+
+</body>
+</html>
+
+
+WELLNESS

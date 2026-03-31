@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study Timer</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+<button onclick="goDashboard()" class="back-btn">Back</button>
+<h2>Focus Timer</h2>
+</header>
+
+<section class="card">
+<h3>Default Timers</h3>
+<button onclick="startTimer(1500)">25 Min</button>
+<button onclick="startTimer(3000)">50 Min</button>
+<button onclick="startTimer(5400)">90 Min</button>
+<button onclick="startTimer(300)">5 Min Break</button>
+<p id="timerDisplay">00:00</p>
+</section>
+
+<section class="card">
+<h3>Custom Timer</h3>
+<input type="number" id="customMin" placeholder="Minutes">
+<button onclick="startCustom()">Start</button>
+<p id="customDisplay">00:00</p>
+</section>
+
+</body>
+</html>
+
+

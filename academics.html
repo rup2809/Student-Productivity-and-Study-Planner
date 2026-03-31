@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Academics</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+<button onclick="goDashboard()" class="back-btn">Back</button>
+<h2>GPA & Semester Analysis</h2>
+</header>
+
+<section class="card">
+<h3>Enter 10 Subjects (Grade Points & Credits)</h3>
+
+<div id="subjectsContainer"></div>
+
+<button onclick="calculateGPA()">Calculate GPA</button>
+<p id="gpaResult"></p>
+</section>
+
+<section class="card">
+<h3>Dynamic Semester Analysis</h3>
+<input type="number" id="totalSems" placeholder="How many semesters completed?">
+<button onclick="generateSemInputs()">Generate</button>
+
+<div id="semesterContainer"></div>
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+<p id="cgpaResult"></p>
+</section>
+
+</body>
+</html>
+
+ACADEMICS
