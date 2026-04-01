@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Planner</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+<button onclick="goDashboard()" class="back-btn">⬅ Back</button>
+<h2>Study Planner</h2>
+</header>
+
+<section class="card">
+<h3>Add Task</h3>
+<input type="text" id="taskInput">
+<select id="priority">
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+</select>
+<button onclick="addTask()">Add</button>
+<ul id="taskList"></ul>
+<p id="progressStatus"></p>
+</section>
+
+<section class="card">
+<h3>Study Hours Today</h3>
+<input type="number" id="studyHours">
+<button onclick="trackStudy()">Submit</button>
+<p id="studyMessage"></p>
+</section>
+
+<section class="card">
+<h3>Test Reminder</h3>
+<input type="text" id="testName">
+<input type="date" id="testDate">
+<button onclick="addTestReminder()">Add</button>
+<p id="testReminderMsg"></p>
+</section>
+
+<section class="card">
+<h3>Assignment Reminder</h3>
+<input type="text" id="assignName">
+<input type="date" id="assignDate">
+<button onclick="addAssignmentReminder()">Add</button>
+<p id="assignmentReminderMsg"></p>
+</section>
+
+
+<section class="card">
+<h3>Commonly Visited Sites for Notes</h3>
+
+<div class="site-links">
+    <a href="https://www.w3schools.com" target="_blank" class="site-card">
+        🌐 W3Schools
+    </a>
+
+    <a href="https://developer.mozilla.org" target="_blank" class="site-card">
+        📘 MDN Web Docs
+    </a>
+
+    <a href="https://www.geeksforgeeks.org" target="_blank" class="site-card">
+        💻 GeeksforGeeks
+    </a>
+</div>
+
+</section>
+
+
+</body>
+</html>
+
